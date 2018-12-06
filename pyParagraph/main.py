@@ -24,6 +24,13 @@ print(f"Approximate Sentence Count:{sentenceCount}")
 print(f"Average Letter Count:{averageLetterCount}")
 print(f"Average Sentence Length:{averageSentenceLength}")
 
+#writing the output to a file
+print ("Paragraph Analysis",  file=open("paragraphAnalysisOutput.txt", "w"))
+print(f"Approximate Word Count:{wordCount}",  file=open("paragraphAnalysisOutput.txt", "a"))
+print(f"Approximate Sentence Count:{sentenceCount}",  file=open("paragraphAnalysisOutput.txt", "a"))
+print(f"Average Letter Count:{averageLetterCount}",  file=open("paragraphAnalysisOutput.txt", "a"))
+print(f"Average Sentence Length:{averageSentenceLength}",  file=open("paragraphAnalysisOutput.txt", "a"))
+
 
 
 
